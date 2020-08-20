@@ -100,7 +100,7 @@ class BacktesterManager(QtWidgets.QWidget):
         backtesting_button = QtWidgets.QPushButton("开始回测")
         backtesting_button.clicked.connect(self.start_backtesting)
 
-        optimization_button = QtWidgets.QPushButton("参数优化")
+        optimization_button = QtWidgets.QPushButton("Parameter optimization")
         optimization_button.clicked.connect(self.start_optimization)
 
         self.result_button = QtWidgets.QPushButton("优化结果")

@@ -188,27 +188,27 @@ class BacktestingEngine:
             try:
                 self.new_bars(dt)
             except Exception:
-                self.output("触发异常，回测终止")
+                self.output("Exception caught; backtest terminated")
                 self.output(traceback.format_exc())
                 return
 
         self.strategy.inited = True
-        self.output("策略初始化完成")
+        self.output("Strategy initialization completed")
 
         self.strategy.on_start()
         self.strategy.trading = True
-        self.output("开始回放历史数据")
+        self.output("Start playback of historical data")
 
         # Use the rest of history data for running backtesting
         for dt in dts[ix:]:
             try:
                 self.new_bars(dt)
             except Exception:
-                self.output("触发异常，回测终止")
+                self.output("Exception caught; backtest terminated")
                 self.output(traceback.format_exc())
                 return
 
-        self.output("历史数据回放结束")
+        self.output("End of historical data playback")
 
     def calculate_result(self) -> None:
         """"""

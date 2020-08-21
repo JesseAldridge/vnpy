@@ -25,22 +25,22 @@ class ManagerWidget(QtWidgets.QWidget):
 
     def init_ui(self) -> None:
         """"""
-        self.setWindowTitle("数据管理")
+        self.setWindowTitle("Data Management")
 
         self.init_tree()
         self.init_table()
         self.init_child()
 
-        refresh_button = QtWidgets.QPushButton("刷新")
+        refresh_button = QtWidgets.QPushButton("Refresh")
         refresh_button.clicked.connect(self.refresh_tree)
 
-        import_button = QtWidgets.QPushButton("导入数据")
+        import_button = QtWidgets.QPushButton("Import Data")
         import_button.clicked.connect(self.import_data)
 
-        update_button = QtWidgets.QPushButton("更新数据")
+        update_button = QtWidgets.QPushButton("Update Data")
         update_button.clicked.connect(self.update_data)
 
-        download_button = QtWidgets.QPushButton("下载数据")
+        download_button = QtWidgets.QPushButton("Download Data")
         download_button.clicked.connect(self.download_data)
 
         hbox1 = QtWidgets.QHBoxLayout()
@@ -63,13 +63,13 @@ class ManagerWidget(QtWidgets.QWidget):
     def init_tree(self) -> None:
         """"""
         labels = [
-            "数据",
-            "本地代码",
-            "代码",
-            "交易所",
-            "数据量",
-            "开始时间",
-            "结束时间",
+            "data",
+            "Native code",
+            "Code",
+            "Exchange",
+            "Amount of data",
+            "Start Time",
+            "End Time",
             "",
             "",
             ""

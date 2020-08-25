@@ -69,7 +69,7 @@ class AlgoWidget(QtWidgets.QWidget):
         start_algo_button.clicked.connect(self.start_algo)
         form.addRow(start_algo_button)
 
-        load_csv_button = QtWidgets.QPushButton("CSV启动")
+        load_csv_button = QtWidgets.QPushButton("CSV Start")
         load_csv_button.clicked.connect(self.load_csv)
         form.addRow(load_csv_button)
 

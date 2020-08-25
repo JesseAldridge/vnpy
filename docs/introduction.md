@@ -43,7 +43,7 @@
   * 华鑫奇点(tora)：国内证券（A股）
 
 * 海外市场
-    
+
   * 富途证券(futu)：港股、美股
 
   * 老虎证券(tiger)：全球证券、期货、期权、外汇等
@@ -89,7 +89,7 @@
 
 * rpc_service：RPC服务模块，允许将某一VN Trader进程启动为服务端，作为统一的行情和交易路由通道，允许多客户端同时连接，实现多进程分布式系统
 
-* csv_loader：CSV历史数据加载器，用于加载CSV格式文件中的历史数据到平台数据库中，用于策略的回测研究以及实盘初始化等功能，支持自定义数据表头格式
+* csv_loader：CSV historical data loader, used to load historical data in CSV format files to the platform database, used for strategy backtesting research and real disk initialization, and other functions, support custom data header format
 
 * data_recorder：行情记录模块，基于图形界面进行配置，根据需求实时录制Tick或者K线行情到数据库中，用于策略回测或者实盘初始化
 

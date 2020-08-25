@@ -119,13 +119,13 @@ class BacktestingEngine:
 
     def load_data(self):
         """"""
-        self.output("开始加载历史数据")
+        self.output("Start loading historical data")
 
         if not self.end:
             self.end = datetime.now()
 
         if self.start >= self.end:
-            self.output("起始日期必须小于结束日期")
+            self.output("The start date must be less than the end date")
             return
 
         if self.mode == BacktestingMode.BAR:
@@ -182,10 +182,10 @@ class BacktestingEngine:
 
     def calculate_result(self):
         """"""
-        self.output("开始计算逐日盯市盈亏")
+        self.output("Start calculating mark-to-market profit and loss")
 
         if not self.trades:
-            self.output("成交记录为空，无法计算")
+            self.output("The transaction record is empty and cannot be calculated")
             return
 
         # Add trade data into daily reuslt.

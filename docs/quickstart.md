@@ -14,7 +14,7 @@
 
 在文件夹example\trader中找到run.py文件(不是vnstudio下的，需要在github上单独下载）。按住“Shift” + 鼠标右键进入cmd窗口，输入下面命令进入如图VN Trader
 ```
-python run.py 
+python run.py
 ```
 ![](https://vnpy-community.oss-cn-shanghai.aliyuncs.com/forum_experience/yazhang/quick_start/Vntrader.PNG "enter image title here")
 
@@ -60,11 +60,9 @@ python run.py
 
 
 
-&nbsp;
+## Data monitoring
 
-## 数据监控
-
-数据监控由以下组件构成，并且附带2个辅助功能：选定以下任一组件，鼠标右键可以选择“调整列宽”（特别适用于屏幕分辨率较低），或者选择“保存数据”（csv格式）
+The data monitoring is composed of the following components with 2 auxiliary functions: select any of the following components, right-click to select "Adjust Column Width" (especially suitable for low screen resolution), or select "Save Data" (csv format) )
 
 ![](https://vnpy-community.oss-cn-shanghai.aliyuncs.com/forum_experience/yazhang/quick_start/2_optiones.png "enter image title here")
 
@@ -108,7 +106,7 @@ python run.py
 - 数量：总持仓，即今仓 + 昨仓
 - 均价：历史成交的平均价格（某些巨型委托，会发生多次部分成交，需要计算平均价格）
 - 盈亏：持仓盈亏：多仓情况下，盈利 = 当前价格 - 均价；空仓则反之。
-  
+
 若平仓离场，持仓数量清零，浮动盈亏变成实际盈亏从而影响账号余额变化。故以下字段：数量、昨仓、冻结、均价、盈亏均为“0”，如下图。
 
 ![](https://vnpy-community.oss-cn-shanghai.aliyuncs.com/forum_experience/yazhang/quick_start/query_position.png "enter image title here")
@@ -117,7 +115,7 @@ python run.py
 资金组件显示了账号的基础信息，如下图需要注意3个字段信息：
 - 可用资金：可以用于委托的现金
 - 冻结：委托操作冻结的金额（与保证金不是一个概念）
-- 余额：总资金，即可用资金 + 保证金 + 浮动盈亏 
+- 余额：总资金，即可用资金 + 保证金 + 浮动盈亏
 
 注意：若全部平仓，浮动盈亏变成实际盈亏，保证金和浮动盈亏清零，总资金等于可用资金
 
